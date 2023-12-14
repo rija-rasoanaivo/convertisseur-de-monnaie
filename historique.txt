@@ -1,8 +1,15 @@
-Monnaie de depart : USD
-Monnaie d'arrivee : EUR
+Devise de depart : USD
+Devise d'arrivee : EUR
+Montant de depart : 50
 Montant converti : 46.860356138706656
-
-Monnaie de depart : USD
-Monnaie d'arrivee : EUR
+----------------------------------------------------
+Devise de depart : USD
+Devise d'arrivee : EUR
+Montant de depart : 50
 Montant converti : 46.860356138706656
-
+----------------------------------------------------
+Devise de depart : CAD
+Devise d'arrivee : BRL
+Montant de depart : 50
+Montant converti : 178.2533550223668
+----------------------------------------------------
