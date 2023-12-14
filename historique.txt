@@ -1,0 +1,8 @@
+Monnaie de depart : USD
+Monnaie d'arrivee : EUR
+Montant converti : 46.860356138706656
+
+Monnaie de depart : USD
+Monnaie d'arrivee : EUR
+Montant converti : 46.860356138706656
+
