@@ -1,15 +1,15 @@
 Devise de depart : USD
 Devise d'arrivee : EUR
-Montant de depart : 50
-Montant converti : 46.860356138706656
+Montant de depart : 50 USD
+Montant converti : 46.860356138706656 EUR
 ----------------------------------------------------
-Devise de depart : USD
-Devise d'arrivee : EUR
-Montant de depart : 50
-Montant converti : 46.860356138706656
+Devise de depart : JPY
+Devise d'arrivee : NZD
+Montant de depart : 50 JPY
+Montant converti : 0.5600765621141022 NZD
 ----------------------------------------------------
-Devise de depart : CAD
-Devise d'arrivee : BRL
-Montant de depart : 50
-Montant converti : 178.2533550223668
+Devise de depart : EUR
+Devise d'arrivee : USD
+Montant de depart : 50 EUR
+Montant converti : 53.349999999999994 USD
 ----------------------------------------------------

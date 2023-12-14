@@ -5,7 +5,7 @@ from forex_python.converter import CurrencyRates
 historique = open("historique.txt", "a")
    
    
-def afficher_devises_disponibles():   
+def afficher_devises_disponibles(): # Fonction pour afficher les devises disponibles   
     # Créer une instance de CurrencyRates
     currency = CurrencyRates() 
     # Obtenir les taux de change
@@ -16,7 +16,7 @@ def afficher_devises_disponibles():
     for currency_code in currencies:
         print(currency_code)
 
-def convertisseur():
+def convertisseur(): # Fonction pour convertir les devises
     global monnaie_de_depart
     global monnaie_d_arrivee
     global montant_converti
@@ -28,23 +28,23 @@ def convertisseur():
     monnaie_d_arrivee = input()
     print("Veuillez entrer le montant à convertir :")
     montant = input()
-    taux = converter.get_rate(monnaie_de_depart, monnaie_d_arrivee)
+    taux = converter.get_rate(monnaie_de_depart, monnaie_d_arrivee) # Obtenir le taux de change # .get_rate() est une fonction de forex_python.converter
     montant_converti = float(montant) * taux
     print("Le montant converti est de " + str(montant_converti) + " " + monnaie_d_arrivee)
 
-def historique_convertisseur():
+def historique_convertisseur(): # Fonction pour enregistrer l'historique des conversions
     global monnaie_de_depart
     global monnaie_d_arrivee
     global montant_converti
     global montant
     historique.write("Devise de depart : " + monnaie_de_depart + "\n")
     historique.write("Devise d'arrivee : " + monnaie_d_arrivee + "\n")
-    historique.write("Montant de depart : " + montant + "\n")
-    historique.write("Montant converti : " + str(montant_converti) + "\n")
+    historique.write("Montant de depart : " + montant + " " + monnaie_de_depart +"\n")
+    historique.write("Montant converti : " + str(montant_converti) + " " + monnaie_d_arrivee + "\n")
     historique.write("----------------------------------------------------\n")
-    historique.close()
+    #historique.close()
 
-def menu():
+def menu(): # Fonction pour afficher le menu
     print("1. afficher les devises disponibles")
     print("2. convertir")
     print("3. afficher l'historique")
@@ -60,11 +60,11 @@ def menu():
     elif choix == "3":
         historique = open("historique.txt", "r")
         print(historique.read())
-        historique.close()
+        #historique.close()
         menu()
     elif choix == "4":
         exit()
     else:
         print("Veuillez entrer un choix valide")
 
-menu()
+menu() 
