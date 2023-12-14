@@ -7,7 +7,7 @@ historique = open("historique.txt", "a")
    
 def afficher_devises_disponibles(): # Fonction pour afficher les devises disponibles   
     # Créer une instance de CurrencyRates
-    currency = CurrencyRates() 
+    currency = CurrencyRates() # .CurrencyRates() est une fonction de forex_python.converter # https://forex-python.readthedocs.io/en/latest/usage.html  
     # Obtenir les taux de change
     rates = currency.get_rates('USD')  # Obtenez les taux par rapport à l'USD (vous pouvez utiliser une autre devise de base si nécessaire)
     # Extraire les devises à partir des taux de change
@@ -15,6 +15,7 @@ def afficher_devises_disponibles(): # Fonction pour afficher les devises disponi
     # Afficher les devises disponibles
     for currency_code in currencies:
         print(currency_code)
+        
 
 def convertisseur(): # Fonction pour convertir les devises
     global monnaie_de_depart
