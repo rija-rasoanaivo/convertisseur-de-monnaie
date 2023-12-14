@@ -49,7 +49,7 @@ def menu(): # Fonction pour afficher le menu
     print("2. convertir")
     print("3. afficher l'historique")
     print("4. quitter")
-    choix = input("Que voulez-vous faire ?")
+    choix = input("Que voulez-vous faire ? ")
     if choix == "1":
         afficher_devises_disponibles()
         menu()
